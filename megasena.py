@@ -10,22 +10,23 @@ from random import sample
 
 i=1
 num = []
-#mega = [17, 20, 22, 35, 41, 42]
+#mega = [17, 20, 22, 35, 41, 42] #RESULTADO DA MEGASENA PARA VERIFICAÇÃO
 
 comando = input()
-while comando != 's': #num != mega
+while comando != 'q': #num != mega
 
 	num = sample(range(1,60), 6)
 	#num.sort()
 
-	#print('Jogo', i, 'da megasena:')
+	print('Jogo', i, 'da megasena:') # PRINTA OS JOGOS E QUANTOS JOGOS JÁ FORAM FEITOS
 	print(num)
 
+	# VERIFICA OS JOGOS NECESSÁRIOS PARA TER O RESULTADO DA MEGASENA
 	#if num == mega:
 		#print('Jogo', i, 'da megasena verncedor:')
 		#print(num)
 		#pass
 	
-	#i=i+1
+	i=i+1
 	
 	comando = input()
